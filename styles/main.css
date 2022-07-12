@@ -2,6 +2,7 @@
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
+    font-family: Myanmar Text;
 }
 body{
     background-image: url(./media/mac\ os.jpg);
@@ -12,12 +13,111 @@ body{
 }
 .status{
     height: 30px;
-    width: 100vw;
+    width: 1931px;
     background-color: #F1EEEE;
     box-shadow: 0px 8px 6px rgba(0, 0, 0, 0.212);
     position: fixed;
+    z-index: 10;
 }
 .content{
     height: 100vh;
     width: 100vw;
+    display: grid;
+    place-items: center;
+}
+.tab{
+    height: 680px;
+    width: 1000px;
+    background-color: rgba(255, 255, 255, .5);
+    box-shadow: 0px 18px 26px rgba(0, 0, 0, 0.23);
+    border-radius: 18px;
+    backdrop-filter: blur(50px);
+    display: flex;
+    justify-content: end;
+}
+.container{
+    flex: 1;
+    display: flex;
+    justify-items: start;
+    flex-direction: column;
+}
+.container h1{
+    padding: 20px;
+    font-family: Myanmar Text;
+    font-size: 24px;
+}
+.buttons{
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.b{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+}
+.b:nth-of-type(1){
+    background-color: #FF0000;
+}
+.b:nth-of-type(2){
+    background-color: #FFE600;
+}
+.b:nth-of-type(3){
+    background-color: #00e545;
+}
+.box1{
+    width: 380px;
+    height: 680px;
+    background-color: #fff;
+}
+.box2{
+    width: 380px;
+    height: 680px;
+    background-color: #F8F8F8;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+}
+.contents{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.content .t{
+    padding: 1rem;
+    margin: .5rem;
+    width: 180px;
+    height: 45px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+.contents .t:nth-of-type(1){
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+.contents .t:nth-of-type(2){
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.contents .t:nth-of-type(3){
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.dock{
+    width: 550px;
+    height: 90px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 29px;
+    backdrop-filter: blur(30px);
+    position: fixed;
+    bottom: -3%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+}
+section{
+    height:100vh;
 }
